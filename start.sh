@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# i need this script because i just ccant istall dependencies
+
 # Create a virtual environment
 python -m venv ~/venvs/image-go-nord
 
