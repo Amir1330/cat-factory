@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [[ -d /data/data/com.termux/files/home/storage/shared/Pictures/cat ]]; then
+if [[ -d /storage/emulated/0/Pictures/cat/ ]]; then
   echo "AWESOME! dir [~/storage/shared/Pictures/cat/] already exists."
 else
-  mkdir -p /data/data/com.termux/files/home/storage/shared/Pictures/cat
+  mkdir -p /storage/emulated/0/Pictures/cat/
   echo "dir [~/storage/shared/Pictures/cat/] has been created successfully!"
 fi
 
