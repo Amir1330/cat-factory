@@ -11,7 +11,7 @@ from rich.console import Console
 from rich.panel import Panel
 
 # CHANGE pirate TO YOUR OWN USER NAME, DO NOT CHANGE THE DIRECTORY ITSELF
-mypath="/home/amir1330/Pictures/cat/"
+mypath = os.path.expanduser("~/storage/shared/Pictures/cat/")
 
 def main():
 
