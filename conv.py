@@ -67,7 +67,7 @@ def fromTui(console):
 
 def process_image(image_path, console, cat_factory):
     image = cat_factory.open_image(image_path)
-    
+
     console.print(f"🔨 [blue]manufacturing '{os.path.basename(image_path)}'...[/]")
 
     # TODO: might be a better idea to save the new Image in the same directory the command is being run from
@@ -79,9 +79,21 @@ def process_image(image_path, console, cat_factory):
     console.print(f"✅ [bold green]Done![/] [green](saved at '{save_path}')[/]")
 
 def add_cat_palette(cat_factory):
-
+    # Catppuccin mocha
     catPalette = [
-    "#D9E0EE",  # Text
+    "#F5E0DC",  # Rosewater
+    "#F2CDCD",  # Flamingo
+    "#F5C2E7",  # Pink
+    "#E8A2AF",  # Mauve
+    "#F28FAD",  # Red
+    "#E78284",  # Maroon
+    "#EF9F76",  # Orange
+    "#E5C890",  # Yellow
+    "#A6E3A1",  # Green
+    "#81C8BE",  # Teal
+    "#89B4FA",  # Blue
+    "#B4BEFE",  # Lavender
+    "#C9CBFF",  # White
     "#C3BAC6",  # Subtext1
     "#988BA2",  # Subtext0
     "#6E6C7E",  # Overlay2
@@ -93,19 +105,35 @@ def add_cat_palette(cat_factory):
     "#181825",  # Base
     "#11111B",  # Mantle
     "#09090D",  # Crust
-    "#F38BA8",  # Red
-    "#EBA0AC",  # Maroon
-    "#F5C2E7",  # Pink
-    "#CBA6F7",  # Mauve
-    "#B4BEFE",  # Lavender
-    "#89B4FA",  # Blue
-    "#89DCEB",  # Sky
-    "#94E2D5",  # Teal
-    "#A6E3A1",  # Green
-    "#F9E2AF",  # Yellow
-    "#FAB387",  # Peach
-    "#F2CDCD",  # Flamingo
-]
+    ]
+
+#  catppuccin latte
+#     catPalette = [
+#     "#D9E0EE",  # Text
+#     "#C3BAC6",  # Subtext1
+#     "#988BA2",  # Subtext0
+#     "#6E6C7E",  # Overlay2
+#     "#575268",  # Overlay1
+#     "#494D64",  # Overlay0
+#     "#393A54",  # Surface2
+#     "#292C3C",  # Surface1
+#     "#1E1E2E",  # Surface0
+#     "#181825",  # Base
+#     "#11111B",  # Mantle
+#     "#09090D",  # Crust
+#     "#F38BA8",  # Red
+#     "#EBA0AC",  # Maroon
+#     "#F5C2E7",  # Pink
+#     "#CBA6F7",  # Mauve
+#     "#B4BEFE",  # Lavender
+#     "#89B4FA",  # Blue
+#     "#89DCEB",  # Sky
+#     "#94E2D5",  # Teal
+#     "#A6E3A1",  # Green
+#     "#F9E2AF",  # Yellow
+#     "#FAB387",  # Peach
+#     "#F2CDCD",  # Flamingo
+#   ]
     for color in catPalette:
         cat_factory.add_color_to_palette(color)
 
